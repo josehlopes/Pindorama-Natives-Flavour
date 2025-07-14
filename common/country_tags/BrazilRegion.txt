@@ -1,0 +1,4 @@
+TMO = "countries/Tamoio.txt"
+MXK = "countries/Maxacali.txt"
+GTC = "countries/Goitacaz.txt"
+TME = "countries/Tremembe.txt"
