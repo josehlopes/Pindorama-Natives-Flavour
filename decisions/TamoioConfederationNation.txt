@@ -14,7 +14,7 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { exists = TMK }
+			NOT = { exists = TMC }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			primary_culture = tupinamba
@@ -37,7 +37,7 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				area = rio_de_janeiro_area
-				area = sao_paulo_area
+				area = sao_paolo_area
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -50,43 +50,73 @@ country_decisions = {
 				type = all
 				owned_by = ROOT
 			}
-		    sao_paulo_area = {
+		    sao_paolo_area = {
 				type = all
 				owned_by = ROOT
 			}
 		}
 		effect = {
-			change_tag = TMK
+			change_tag = TMC
+			change_government = republic
+			add_government_reform = noble_elite_reform
+			add_prestige = 50
 			swap_non_generic_missions = yes
 			on_change_tag_effect = yes
-			remove_non_electors_emperors_from_empire_effect = yes
+
+
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
-				}	
-				set_government_rank = 2
-			}
-			if = {
-				else = {
-					unlock_government_reform = {
-						government_reform = tribal_kingdom
+					NOT = {
+						government_rank = 2
+					}
+					is_part_of_hre = no
+				}
+				TMC = { 
+					set_government_rank = 2
+					
+					every_owned_province = {
+						add_institution_embracement = {
+							which = feudalism
+							value = 100
+						}
+					} 
+					random_owned_province = {
+						add_institution_embracement = {
+							which = renaissance
+							value = 100
+						} 
 					}
 				}
 			}
+
+			brazil_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+
+				add_permanent_claim = TMC
+			} 
+		
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige = 10
+			add_country_modifier = {
+				name = "army_reform"
+				duration = 7300
+			}
+
 			set_country_flag = formed_tamoio_flag
+
 			if = {
 				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
+				country_event = { id = ideagroups.1 }
 			}
 		}
+
 		ai_will_do = {
 			factor = 10
 		}
 	}
-	
 }

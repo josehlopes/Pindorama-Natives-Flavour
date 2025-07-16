@@ -11,7 +11,7 @@
 graphical_culture = northamericagfx
 
 color = { 44 141 38 }
-revolutionary_colors = { 135  38  141 }
+revolutionary_colors = { 2  2  10 }
 
 historical_score = 100
 preferred_religion = animism

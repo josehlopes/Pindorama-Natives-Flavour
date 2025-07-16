@@ -3,7 +3,7 @@
 graphical_culture = northamericagfx
 
 color = { 143 118 78 }
-revolutionary_colors = { 94  94  94 }
+revolutionary_colors = { 8  7  8 }
 
 historical_score = 100
 preferred_religion = totemism

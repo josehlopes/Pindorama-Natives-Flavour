@@ -1,10 +1,13 @@
 government = native
-add_government_reform = native_council_reform
+add_government_reform = native_clan_council_reform
 government_rank = 1
 primary_culture = tupinamba
 religion = animism
 technology_group = south_american
 capital = 749 #Maranhão
+national_focus = ADM
+historical_rival = TUA
+
 
 1444.11.11 = {
 	monarch = {

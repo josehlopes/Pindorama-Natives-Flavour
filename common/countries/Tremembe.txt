@@ -1,9 +1,8 @@
 #Tremembé
-
 graphical_culture = northamericagfx
 
 color = { 41 71 137 }
-revolutionary_colors = { 137  107  41 }
+revolutionary_colors = { 10  10  16 }
 
 historical_score = 100
 preferred_religion = animism

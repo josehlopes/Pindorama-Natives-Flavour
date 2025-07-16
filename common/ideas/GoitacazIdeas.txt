@@ -1,0 +1,49 @@
+# Goitacaz
+GOI_ideas = {
+	start = {
+		land_morale = 0.15                 
+		land_attrition = -0.15              
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.20      
+	}
+	
+	trigger = {
+		tag = GTC                        
+	}
+	free = yes
+	
+	goi_restinga_sentinels = {
+		defensiveness = 0.15                  
+	}
+	
+	goi_fierce_reputation = {
+		diplomatic_reputation = -1
+		global_missionary_strength = 0.02    
+	}
+	
+	goi_lagoon_knowledge = {
+		movement_speed = 0.10                 
+	}
+	
+	goi_enemy_of_many = {
+	 hostile_attrition = 1.0                
+	}
+	
+	goi_bone_spears = {
+		infantry_power = 0.10                
+	}
+	
+	goi_no_masters = {
+		governing_capacity_modifier = 0.15    
+	}
+	
+	goi_children_of_the_wind = {
+		colonists = 1
+		global_colonial_growth = 10         
+	}
+}
+
+
+

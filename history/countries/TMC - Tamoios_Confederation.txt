@@ -1,0 +1,16 @@
+government = republic
+add_government_reform = noble_elite_reform
+government_rank = 1
+primary_culture = tupinamba
+religion = animism
+technology_group = south_american
+capital = 763 #Rio de Janeiro
+
+1554.1.1 = {
+	monarch = {
+		name = "Cunhambebe"
+		adm = 4
+		dip = 4
+		mil = 6
+	}
+}

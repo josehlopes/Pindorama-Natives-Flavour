@@ -1,8 +1,9 @@
 #Tamoio
+
 graphical_culture = northamericagfx
 
-color = { 134 39 35 }
-revolutionary_colors = { 15  15  3 }
+color = { 162 70 72 }
+revolutionary_colors = { 12  12  3 }
 
 
 historical_score = 100

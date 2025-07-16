@@ -1,22 +1,30 @@
 ﻿l_english:
-  # Idea Group Title and Headers
-  TMO_ideas:0 "Tamoio Ideas"
-  TMO_ideas_start:0 "Tamoio Traditions"
-  TMO_ideas_bonus:0 "Tamoio Ambition"
-  tmo_forest_pathfinders:0 "Forest Pathfinders"
-  tmo_forest_pathfinders_desc:0 "Our people have always been deeply connected to the Atlantic Forest. Its dense vegetation is not an obstacle, but a home—full of hidden paths known only to us. By navigating these lands with unmatched ease, our warriors and scouts outmaneuver any invader."
-  tmo_coastal_fishers:0 "Coastal Fishers"
-  tmo_coastal_fishers_desc:0 "The sea has been our provider, our protector, and our path to distant lands. From the bountiful coastal waters, we have drawn not only sustenance but also trade and connection with other tribes. The rhythm of the tides guides our lives."
-  tmo_yam_cultivation:0 "Yam Cultivation"
-  tmo_yam_cultivation_desc:0 "Though hunters and gatherers by tradition, we have long relied on the cultivation of yam and manioc to support our people. This steady food supply allows our communities to thrive even in times of scarcity."
-  tmo_spiritual_singers:0 "Spiritual Singers"
-  tmo_spiritual_singers_desc:0 "Our myths and legends are not merely stories—they are sacred truths passed on by singers and shamans. Through them, the spirits of our ancestors speak, guiding warriors and leaders with ancient wisdom and courage."
-  tmo_jaguar_warriors:0 "Jaguar Warriors"
-  tmo_jaguar_warriors_desc:0 "The jaguar is the guardian of our forests and the soul of the hunter. In battle, our warriors emulate its stealth, strength, and speed. Like the jaguar, they strike from the shadows and vanish into the jungle."
-  tmo_trade_with_foreigners:0 "Trade with Foreigners"
-  tmo_trade_with_foreigners_desc:0 "New peoples from across the sea have come to our shores. Though many bring war, others bring gifts and trade. By learning their ways and using their tools, we turn foreign contact into strength for our tribe."
-  tmo_confederate_strength:0 "Confederate Strength"
-  tmo_confederate_strength_desc:0 "Long divided by clan and custom, our people now rise united. As threats from across the ocean grow, so does our resolve. United under the banner of the Tamoio Confederation, we stand stronger than ever before."
+
+ TMO_ideas:0 "Tamoio Ideas"
+ TMO_ideas_start:0 "Tamoio Traditions"
+ TMO_ideas_bonus:0 "Tamoio Ambition"
+
+ tmo_trade_with_foreigners:0 "Trade with Foreigners"
+ tmo_trade_with_foreigners_desc:0 "New peoples from across the sea have come to our shores. Though many bring war, others bring gifts and trade. By learning their ways and using their tools, we turn foreign contact into strength for our tribe."
+
+ tmo_defend_our_territory:0 "Defend Our Territory"
+ tmo_defend_our_territory_desc:0 "The land is sacred, passed to us by our ancestors and protected by our spirits. We will defend every village, river, and forest path with unwavering determination against all who threaten our way of life."
+
+ tmo_confederate_strength:0 "Confederate Strength"
+ tmo_confederate_strength_desc:0 "Long divided by clan and custom, our people now rise united. As threats from across the ocean grow, so does our resolve. United under the banner of the Tamoio Confederation, we stand stronger than ever before."
+
+ tmo_yam_cultivation:0 "Yam Cultivation"
+ tmo_yam_cultivation_desc:0 "Though hunters and gatherers by tradition, we have long relied on the cultivation of yam and manioc to support our people. This steady food supply allows our communities to thrive even in times of scarcity."
+
+ tmo_the_grandparents:0 "The Grandparents"
+ tmo_the_grandparents_desc:0 "‘Tamoio’ means 'grandfather' in the tongue of our people. It is not just a name, but a declaration: we are the inheritors of ancient wisdom. Guided by the elders and their stories, our tribe remembers, resists, and endures."
+
+ tmo_metal_tools:0 "Metal Tools"
+ tmo_metal_tools_desc:0 "We have learned to work with iron and copper from those who crossed the sea. Metal blades and tools give us an edge in hunting, farming, and war—changing the balance of power in our favor."
+
+ tmo_modernize_the_tribe:0 "Modernize the Tribe"
+ tmo_modernize_the_tribe_desc:0 "To preserve our people, we must understand the new world forming around us. By adapting foreign knowledge to our own needs, we ensure the Tamoio not only survive—but thrive—in an age of change."
+
 
 
   GOI_ideas:0 "Goitacaz Ideas"
