@@ -17,13 +17,19 @@ the_future_of_the_tribe = {
 			NOT = { has_institution = feudalism }
 		}
 		effect = {
+			
 			add_country_modifier = {
 				name = "tupi_modernization"
 				duration = 9125 #25 years
 			}
-			country_event = {
-				id = institution_events.10
+
+			capital_scope = {
+				add_institution_embracement = {
+				which = feudalism
+				value = 100
+				}
 			}
+
 			define_advisor = {
 				type = treasurer
 				skill = 1

@@ -5,6 +5,9 @@ primary_culture = tupinamba
 religion = animism
 technology_group = south_american
 capital = 762 #São Tome
+historical_friend = TUA
+historical_rival = TMO
+
 
 1444.11.11 = {
 	monarch = {
