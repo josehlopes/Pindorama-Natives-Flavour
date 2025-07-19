@@ -10,7 +10,7 @@ the_future_of_the_tribe = {
 	}
 
 	order_among_the_tribes = {
-		icon = mission_early_game_buildings
+		icon = mission_control_unrest
 		required_missions = {  } #None
 		trigger = {
 			adm_tech = 3
@@ -39,4 +39,61 @@ the_future_of_the_tribe = {
 			}
 		}
 	}
+
+	tmo_establish_a_capital {
+		icon = mission_native_dev_capital
+		required_missions {order_among_the_tribes}
+		slot = 2
+		position = 2
+
+		trigger = {
+			has_reform = settled_tribe
+		}
+
+		effect = {
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "growth_of_capital"
+						duration = 9125 #25 years
+					}
+				}
+			}
+		}
+	}
+
+	 tmo_coastal_dominance = {
+        icon = mission_ne_great_lakes_conquest
+		slot = 2
+        position = 2
+        required_missions = { order_among_the_tribes }
+        provinces_to_highlight = {
+            761 762 763 764 766 769 760
+            NOT = { owned_by = ROOT }
+        }
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 4
+                is_coastal = yes
+            }
+        }
+        effect = {
+            add_permanent_claim = { area = rio_de_janeiro_area }
+            add_permanent_claim = { area = sao_paolo_area }
+            every_owned_province = {
+                limit = {
+                    is_coastal = yes
+                }
+                add_base_production = 2
+            }
+            add_country_modifier = {
+                name = "tamoio_coastal_power"
+                duration = 9125 # 20 anos
+            }
+        }
+    }
 }
