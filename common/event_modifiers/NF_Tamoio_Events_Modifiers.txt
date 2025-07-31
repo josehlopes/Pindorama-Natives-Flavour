@@ -1,0 +1,11 @@
+french_antarctica_settlement = {
+	colonists = 1
+	global_colonial_growth = 15
+	colony_cost_modifier = -0.5
+}
+
+tamoio_french_alliance = {
+	land_morale = 0.15
+	navy_morale = 0.15
+	global_manpower_modifier = 0.10
+}

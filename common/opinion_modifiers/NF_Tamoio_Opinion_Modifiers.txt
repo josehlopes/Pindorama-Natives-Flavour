@@ -1,0 +1,9 @@
+france_tamoio_military_cooperation = {
+	opinion = 50
+	years = 50
+}
+
+tamoio_frustrated_france = {
+	opinion = -30
+	years = 10
+}

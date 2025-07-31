@@ -1,0 +1,50 @@
+# flavor_tmo.1 - Estabelecimento da França Antártica
+namespace = NF_Tamoio_Events
+
+country_event = {
+	id = NF_Tamoio_Events.1
+	title = NF_Tamoio_Events.1.t
+	desc = NF_Tamoio_Events.1.d  # Descreve a chegada de Villegagnon e a fundação do Forte Coligny :cite[3]:cite[8]
+	picture = northamericagfx_REFORM_eventPicture
+	
+	is_triggered_only = yes
+	option = {
+		name = NF_Tamoio_Events.1.a
+		if = {
+			limit = { owns = 763 }# Província do Rio de Janeiro
+			763 = {
+				cede_province = FRA
+				add_building = fort_15th
+			}
+			FRA = {
+				add_opinion = { who = TMO modifier = france_tamoio_military_cooperation }
+				add_country_modifier = {
+					name = french_antarctica_settlement
+					duration = 9125 #25 Years
+				}
+				add_trust = {
+					who = TMO
+					value = 25
+				}
+				create_alliance = TMO
+			}
+		}
+		add_prestige = 20
+		add_country_modifier = {
+			name = tamoio_french_alliance
+			duration = 9125 #25 Years
+		}
+	}
+	option = {
+		name = NF_Tamoio_Events.1.b
+		add_dip_power = 100
+		add_mil_power = 100
+		add_adm_power = 100
+		FRA = {
+			add_opinion = {
+				who = ROOT
+				modifier = tamoio_frustrated_france
+			}
+		}
+	}
+}
