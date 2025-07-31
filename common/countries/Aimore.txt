@@ -1,0 +1,153 @@
+#Aimore
+graphical_culture = northamericagfx
+
+color = { 243 237 25 }
+revolutionary_colors = { 13  13  8 }
+
+
+historical_score = 100
+preferred_religion = animism
+
+historical_idea_groups = {
+    offensive_ideas
+    expansion_ideas
+    economic_ideas
+    religious_ideas
+    diplomatic_ideas
+    maritime_ideas
+    trade_ideas
+    spy_ideas
+}
+
+historical_units = {
+    south_american_spearmen
+    south_american_warfare
+    inca_mountain_warfare
+    incan_slingshots
+    incan_axemen
+    south_american_gunpowder_warfare
+    south_american_reformed_gunpowder_warfare
+    south_american_arquebusier
+    westernized_incan
+    reformed_westernized_incan
+    incan_guerilla_warfare
+}
+
+leader_names = {
+    Piratininga
+    Tabajara
+    Temiminó
+    Tamoio
+    Caeté
+    Tupinaé
+    Tupina
+    Aricobé
+    Guarani
+    Potiguara
+    Karijó
+    Goitacá
+    Aimoré
+    Guajajara
+    Anambé
+    Pataxó
+    Tuxá
+    Tremembé
+    Paranaguá
+    Jurupixuna
+    Tapajó
+    Nheengaíba
+    Carijó
+    Maracá
+    Tuxaua
+    Tupinambá
+}
+
+monarch_names = {
+    "Tibiriçá #0" = 10
+    "Piquerobi #0" = 10
+    "Caiubi #0" = 10
+    "Ramalho #0" = 10
+    "Italo #0" = 10
+    "Arah #0" = 10
+    "Pirijá #0" = 10
+    "Arata #0" = 10
+    "Toruí #0" = 10
+    "Mbicy #0" = 10
+    "Anhangá #0" = 10
+    "Karaiá #0" = 10
+    "Araribóia #0" = 0
+    "Jaguaretê #0" = 10
+    "Tamandaré #0" = 10
+    "Ybyrá #0" = 10
+    "Guaraci #0" = 10
+    "Karajá #0" = 10
+    "Igobi #0" = 10
+    "Ajuricaba #0" = 10
+
+    "Azelene #0" = -1
+    "Bartira #0" = -1
+    "Potira #0" = -1
+    "Moema #0" = -1
+    "Jandira #0" = -1
+    "Iara #0" = -1
+    "Araci #0" = -1
+    "Jaci #0" = -1
+    "Yaraí #0" = -1
+    "Cyara #0" = -1
+    "Anauá #0" = -1
+    "Iandé #0" = -1
+    "Mainá #0" = -1
+}
+
+
+ship_names = {
+    Bartira
+    Cacique
+    Italo
+    Mbicy
+    Piratininga
+    Pirijá
+    Potira
+    Piquerobi
+    Tamoios
+    Toruí
+    Guaibimpará
+    Niterói
+    Potira
+    Ubatuba
+    Uruçumirim
+    "Kari'boka"
+
+    Guaraci
+    Araribóia
+    Karajá
+    Igarapé
+    Aruanã
+    Tupinambá
+    Ipanema
+    Iandé
+    Ibirapitanga
+    Pindorama
+    Moema
+    Ajuricaba
+    Ybyrá
+    Jaguaretê
+    Araci
+    Jaci
+    Tainá
+}
+
+army_names = {
+    Tupinambaranema
+    Anhangáraîuba
+    Jaguaretêreta
+    "Karaiurú Asyî"
+}
+
+fleet_names = {
+    "Ygarape'yg"
+    Pindovy-Abaîra
+    "Paranã Karú"
+    Ybytu'aîba
+}
+

@@ -27,27 +27,27 @@
 
 
 
-  GOI_ideas:0 "Goitacaz Ideas"
-  GOI_ideas_start:0 "Goitacaz Traditions"
-  GOI_ideas_bonus:0 "Goitacaz Ambition"
+  GTC_ideas:0 "Goitacaz Ideas"
+  GTC_ideas_start:0 "Goitacaz Traditions"
+  GTC_ideas_bonus:0 "Goitacaz Ambition"
 
-  goi_restinga_sentinels:0 "Restinga Sentinels"
-  goi_restinga_sentinels_desc:0 "The lagoons and sandbanks of our homeland are a maze to outsiders, but to us, they are walls of defense. Like shadows among the reeds, we strike and vanish, defending our land with cunning and patience."
+  gtc_restinga_sentinels:0 "Restinga Sentinels"
+  gtc_restinga_sentinels_desc:0 "The lagoons and sandbanks of our homeland are a maze to outsiders, but to us, they are walls of defense. Like shadows among the reeds, we strike and vanish, defending our land with cunning and patience."
 
-  goi_fierce_reputation:0 "Fierce Reputation"
-  goi_fierce_reputation_desc:0 "To the foreigners, we are devourers. To our rivals, we are nightmares in the night. Whether myth or truth, our ferocity shapes every tale told about us."
+  gtc_fierce_reputation:0 "Fierce Reputation"
+  gtc_fierce_reputation_desc:0 "To the foreigners, we are devourers. To our rivals, we are nightmares in the night. Whether myth or truth, our ferocity shapes every tale told about us."
 
-  goi_lagoon_knowledge:0 "Lagoon Knowledge"
-  goi_lagoon_knowledge_desc:0 "Where the tides shift and the waters wind, only we move swiftly. Generations of hunting and foraging have made us masters of these liquid paths."
+  gtc_lagoon_knowledge:0 "Lagoon Knowledge"
+  gtc_lagoon_knowledge_desc:0 "Where the tides shift and the waters wind, only we move swiftly. Generations of hunting and foraging have made us masters of these liquid paths."
 
-  goi_enemy_of_many:0 "Enemy of Many"
-  goi_enemy_of_many_desc:0 "Surrounded by hostile tribes and invaders, we endure. Each enemy teaches us a new trick, each defeat shapes a sharper spear."
+  gtc_enemy_of_many:0 "Enemy of Many"
+  gtc_enemy_of_many_desc:0 "Surrounded by hostile tribes and invaders, we endure. Each enemy teaches us a new trick, each defeat shapes a sharper spear."
 
-  goi_bone_spears:0 "Bone Spears"
-  goi_bone_spears_desc:0 "Forged from bone and sharpened with fire, our weapons may seem primitive, but they are wielded with deadly skill and sacred purpose."
+  gtc_bone_spears:0 "Bone Spears"
+  gtc_bone_spears_desc:0 "Forged from bone and sharpened with fire, our weapons may seem primitive, but they are wielded with deadly skill and sacred purpose."
 
-  goi_no_masters:0 "No Masters"
-  goi_no_masters_desc:0 "No chief commands all, and no foreigner rules us. Each warrior is a voice, and each voice is a blade. The Goitacaz bow to none."
+  gtc_no_masters:0 "No Masters"
+  gtc_no_masters_desc:0 "No chief commands all, and no foreigner rules us. Each warrior is a voice, and each voice is a blade. The Goitacaz bow to none."
 
-  goi_children_of_the_wind:0 "Children of the Wind"
-  goi_children_of_the_wind_desc:0 "Carried by the sea breeze and the stories of our ancestors, we move ever forward. New lands, new shores, new chances to remain free."
+  gtc_children_of_the_wind:0 "Children of the Wind"
+  gtc_children_of_the_wind_desc:0 "Carried by the sea breeze and the stories of our ancestors, we move ever forward. New lands, new shores, new chances to remain free."

@@ -1,6 +1,4 @@
-#Maxacali
-
-graphical_culture = northamericagfx
+#Maxacaligraphical_culture = northamericagfx
 
 color = { 143 118 78 }
 revolutionary_colors = { 8  7  8 }

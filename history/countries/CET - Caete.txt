@@ -4,15 +4,15 @@ government_rank = 1
 primary_culture = tupinamba
 religion = animism
 technology_group = south_american
-capital = 763 #Rio de Janeiro
-national_focus = DIP
+capital = 2921 #Alagoas
+national_focus = ADM
 
 1444.11.11 = {
-	monarch = {
-		name = "Native Council"
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
-	}
+    monarch = {
+        name = "Native Council"
+        adm = 3
+        dip = 3
+        mil = 3
+        regent = yes
+    }
 }

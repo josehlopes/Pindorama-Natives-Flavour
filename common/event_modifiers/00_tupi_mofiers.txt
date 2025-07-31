@@ -1,9 +1,9 @@
 tupi_modernization = {
-	reform_progress_growth = 0.25
-	global_institution_spread  = 0.33
+    reform_progress_growth = 0.25
+    global_institution_spread  = 0.33
 }
 
-tamoio_coastal_power = {
-	trade_efficiency = 0.15
-	production_efficiency = 0.15         
+tupi_coastal_power = {
+    trade_efficiency = 0.15
+    production_efficiency = 0.15
 }

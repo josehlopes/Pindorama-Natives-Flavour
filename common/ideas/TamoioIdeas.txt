@@ -1,45 +1,45 @@
 # Tamoio
 TMO_ideas = {
 	start = {
-		diplomatic_reputation =  1                
-		stability_cost_modifier = -0.15              
+		diplomatic_reputation =  1
+		improve_relation_modifier = 0.15
 	}
 	
 	bonus = {
-		global_institution_spread = 0.30     
+		institution_growth = 15
 	}
 	
 	trigger = {
-		tag = TMO                          
+		tag = TMO
 	}
 	free = yes
 	
 	tmo_trade_with_foreigners = {
-		trade_efficiency = 0.15         
+		trade_efficiency = 0.20
 	}
-
+	
 	tmo_defend_our_territory = {
-		local_defensiveness = 0.15          
+		local_defensiveness = 0.10
 	}
-
+	
 	tmo_confederate_strength = {
-		global_manpower_modifier = 0.15     
+		global_manpower_modifier = 0.10
 	}
-
+	
 	tmo_yam_cultivation = {
-		production_efficiency = 0.15         
+		production_efficiency = 0.10
 	}
-
+	
 	tmo_the_grandparents = {
-		same_culture_advisor_cost = -0.30              
+		same_culture_advisor_cost = -0.30
 	}
 	
 	tmo_metal_tools = {
-		infantry_power = 0.15       
+		infantry_power = 0.10
 	}
 	
 	tmo_modernize_the_tribe = {
-		technology_cost = -0.10          
+		technology_cost = -0.05
 	}
-
+	
 }

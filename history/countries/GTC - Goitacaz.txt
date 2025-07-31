@@ -1,10 +1,11 @@
 government = native
 add_government_reform = native_chiefdom_reform
 government_rank = 1
-primary_culture = tupinamba
+primary_culture = ge
 religion = animism
 technology_group = south_american
 capital = 762 #São Tome
+national_focus = MIL
 historical_friend = TUA
 historical_rival = TMO
 

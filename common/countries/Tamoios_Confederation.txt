@@ -6,7 +6,7 @@ color = { 162 70 72 }
 revolutionary_colors = { 12  12  3 }
 
 
-historical_score = 100
+historical_score = 500
 preferred_religion = animism
 
 historical_idea_groups = {
