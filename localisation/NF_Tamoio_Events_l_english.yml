@@ -4,3 +4,13 @@
  NF_Tamoio_Events.1.d:0 "Following our overtures for support, the great ships of our French allies have arrived, led by Villegagnon himself. They speak of establishing 'Fort Coligny' on our coast, a new stronghold that will serve as a base for our combined efforts against our common enemies. This alliance could be the turning point we need."
  NF_Tamoio_Events.1.a:0 "§GWelcome them and consolidate our alliance.§!"
  NF_Tamoio_Events.1.b:0 "§RThough allies, their presence requires careful management.§!"
+
+ NF_Tamoio_Events.2.t:0 "A New Faith from the French"
+ NF_Tamoio_Events.2.d:0 "The French, our new allies, brought more than just weapons and ships. Their priests speak of a powerful, singular God and a path to salvation that is new to our people. This faith promises great spiritual strength and closer ties with our European partners, but it requires us to turn away from the spirits of our ancestors. Our confederation must decide how to navigate this new spiritual challenge."
+ NF_Tamoio_Events.2.a:0 "§GEmbrace the path of their new God.§!"
+ NF_Tamoio_Events.2.b:0 "§ROur traditions and ancestors are our strength. We will not abandon them.§!"
+
+ NF_Tamoio_Events.3.t:0 "A New Path for the Confederation"
+ NF_Tamoio_Events.3.d:0 "Our alliance with the French and our modernization efforts have exposed us to new ways of governance. The Europeans speak of republics and theocracies, systems that differ greatly from our traditional tribal structure. Our shamans and elders debate fiercely whether our leadership should be guided by a single, divine authority or by a council of respected individuals. The time has come to choose the future of the Tamoio."
+ NF_Tamoio_Events.3.a:0 "Our faith will guide us. Establish a Theocracy."
+ NF_Tamoio_Events.3.b:0 "A council of elders will lead us. Form a Republic."

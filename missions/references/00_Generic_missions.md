@@ -8,6 +8,7 @@ military_missions = { #Series name is displayed over the slot?
 	ai = no #Can exist under the series itself or within individual missions.
 	potential = {
 		always = yes
+		NOT = { is_a_coastal_tupi_tribe = yes }
 	} #These are triggers for the entire series
 	
 	#missions
@@ -196,7 +197,9 @@ diplomatic_missions = {
 	generic = yes
 	
 	potential = {
-	   always = yes
+		always = yes
+		NOT = { is_a_coastal_tupi_tribe = yes }
+		
 	}
 	
 	building_alliances = {
@@ -249,9 +252,9 @@ diplomatic_missions = {
 	establish_high_seas_navy = {
 		icon = mission_establish_high_seas_navy
 		required_missions = { have_two_subjects }
-		trigger = { 
+		trigger = {
 			OR = {
-				num_of_heavy_ship = 10 
+				num_of_heavy_ship = 10
 				num_of_galley = 30
 			}
 		}
@@ -426,14 +429,15 @@ diplomatic_missions = {
 	}
 }
 
- #3nd mission series:
+#3nd mission series:
 administrative_missions = {
 	slot = 4
 	
 	generic = yes
 	
 	potential = {
-	   always = yes
+		always = yes
+		NOT = { is_a_coastal_tupi_tribe = yes }
 	}
 	high_income_mission = {
 		icon = mission_high_income

@@ -6,7 +6,7 @@ TMO_ideas = {
 	}
 	
 	bonus = {
-		institution_growth = 15
+		trade_range_modifier = 0.25
 	}
 	
 	trigger = {

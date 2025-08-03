@@ -15,40 +15,27 @@ TMO_missions_1 = {
 		required_missions = { }
 		
 		trigger = {
-			government_reform_progress = 140
+			government_reform_progress = 100
 		}
 		
 		effect = {
 			add_government_reform = native_settle_down_reform
-			add_country_modifier = {
-				name = "colonize_the_continent"
-				duration = -1
-			}
-			add_country_modifier = {
-				name = "colony_cost_modifier"
-				duration = 9125 #25 years
-			}
-			can_colonize = yes
+			colonists = 1
 		}
 	}
 	
-	tmo_tamoio_economic_boom = {
-		icon = mission_african_gold
+	tmo_stabilize_nation = {
+		icon = mission_control_unrest
 		position = 4
-		required_missions = { tmo_stabilize_nation }
-
+		required_missions = { tmo_modernize_the_tribe }
 		trigger = {
-			grown_by_development = 50
+			stability = 3
 		}
-
+		
 		effect = {
-			add_country_modifier = {
-				name = tupi_coastal_power
-				duration = 9125 #25 years
-			}
+			add_prestige = 70
 		}
 	}
-	
 }
 
 TMO_missions_2 = {
@@ -66,24 +53,35 @@ TMO_missions_2 = {
 		icon = mission_ne_longhouses
 		position = 2
 		required_missions = { tmo_union_of_tribes tmo_settle_tribe }
+		
 		trigger = {
-			has_country_flag = gained_feudalism_from_france
+			adm_tech = 5
 		}
+		
 		effect = {
-			country_event = { id = NF_Tamoio_Events.3 days = 1 }
+			TMO = {
+				embrace_institution = feudalism
+			}
 		}
 	}
 	
-	tmo_stabilize_nation = {
-		icon = mission_control_unrest
+	tmo_tamoio_economic_boom = {
+		icon = mission_african_gold
 		position = 3
 		required_missions = { tmo_modernize_the_tribe }
+		
 		trigger = {
-			stability = 3
+			num_of_development_provinces = {
+				development = 10
+				amount = 3
+			}
 		}
-
+		
 		effect = {
-			add_prestige = 70
+			add_country_modifier = {
+				name = tupi_coastal_power
+				duration = 18250 #50 Years
+			}
 		}
 	}
 }
@@ -126,21 +124,12 @@ TMO_missions_3 = {
 	tmo_create_tamoio_nation = {
 		icon = mission_unite_home_region
 		position = 4
-		required_missions = { tmo_stabilize_nation }
+		required_missions = { tmo_tamoio_economic_boom }
 		
-		provinces_to_highlight = {
-			OR = {
-				area = rio_de_janeiro_area
-				area = sao_paolo_area
-				area = minas_gerais_area
-			}
-			NOT = { owned_by = ROOT }
-		}
-
 		trigger = {
-			army_size_percentage = 1
+			army_size_percentage = 100
 		}
-
+		
 		effect = {
 			rio_de_janeiro_area = {
 				limit = {
@@ -188,7 +177,7 @@ TMO_missions_4 = {
 			exists = FRA
 			FRA = {
 				has_opinion = {
-					who = ROOT
+					who = TMO
 					value = 80
 				}
 			}
@@ -210,29 +199,17 @@ TMO_missions_4 = {
 		}
 	}
 	
-	tmo_gain_knowledge = {
+	tmo_gain_knowledge = { #TODO: CRIAR NOVA MISSÃO
 		icon = mission_sio_european_trade
 		position = 3
 		required_missions = { tmo_enemy_of_my_enemy }
 		trigger = {
 			adm_tech = 5
-			ROOT = {
-				alliance_with = FRA
-			}
 		}
 		
 		effect = {
-			set_country_flag = gained_feudalism_from_france
-			capital_scope = {
-				add_institution_embracement = {
-					which = feudalism
-					value = 100
-				}
-			}
-			add_country_modifier = {
-				name = "embracement_cost"
-				duration = 1825 #5 Years
-			}
+			TMO = {
+				effect = { embrace_institution = feudalism }
 		}
 	}
 }
@@ -255,17 +232,6 @@ TMO_missions_5 = {
 		
 		trigger = {
 			is_federation_leader = yes
-			OR = {
-				brazil_region = {
-					any_country = {
-						is_colonial_nation = yes
-					}
-				}
-				any_neighbor_country = {
-					capital_scope = { continent = europe }
-					OR = { technology_group = western }
-				}
-			}
 		}
 		
 		effect = {

@@ -6,7 +6,7 @@ revolutionary_colors = { 16  14  16 }
 
 
 historical_score = 100
-preferred_religion = animism
+preferred_religion = totemism
 
 historical_idea_groups = {
     offensive_ideas

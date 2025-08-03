@@ -1,19 +1,31 @@
 ﻿l_english:
 
- tupi_costal_warriors_title:0 "Coastal Warriors"
- tupi_costal_warriors_desc:0 "Our lives are intertwined with the great waters. The abundance of the coast sustains us, and our mastery of its shores makes us formidable. By sharpening our skills and training our warriors, we ensure our ancestral lands remain under our unwavering control, ready to defend against any who dare to trespass."
+ tmo_settle_tribe_title:0 "Settle the Tribe"
+ tmo_settle_tribe_desc:0 "The time has come to leave behind our nomadic ways. By founding permanent villages and strengthening centralized leadership, we can better steward our lands and unify our people. This reform will lay the foundation for a stable and enduring Tamõic nation."
 
- tupi_expand_the_tribe_title:0 "Expand the Tribe's Reach"
- tupi_expand_the_tribe_desc:0 "The spirits favor us, and our people flourish. As our numbers grow, so too must our territory. It's time to venture beyond our current borders, establishing new villages and incorporating neighboring lands into our domain, securing a prosperous future for all Tupi."
+ tmo_stabilize_nation_title:0 "Stabilize the Nation"
+ tmo_stabilize_nation_desc:0 "Our efforts have brought long-awaited stability to our territories. With firm leadership and content communities, peace has taken root. This internal harmony allows us to look beyond survival, and begin to shape our future with confidence."
 
- tupi_remove_europeans_title:0 "Drive Back the Pale Faces"
- tupi_remove_europeans_desc:0 "Strange ships have brought strange people to our sacred shores. They speak of new gods and claim our lands with an insatiable hunger. We, the Tupi, will not yield. United, we will unleash the fury of our ancestors, driving these pale-faced invaders back into the sea from whence they came, and reclaim what is rightfully ours."
+ tmo_modernize_the_tribe_title:0 "Modernize the Tribe"
+ tmo_modernize_the_tribe_desc:0 "Our traditions are the soul of our people, but the world is changing. To endure, we must adapt. By embracing select foreign tools and ideas, we can strengthen our administration and army, ensuring we stand ready against the growing foreign threat."
+
+ tmo_tamoio_economic_boom_title:0 "Ta'mõi Economic Boom"
+ tmo_tamoio_economic_boom_desc:0 "The coastal lands are rich in natural wealth. By developing our key provinces and improving infrastructure, we will unlock this potential. Trade will flourish, production will rise, and prosperity will fuel our nation's expansion."
 
  tmo_union_of_tribes_title:0 "Union of Tribes"
- tmo_union_of_tribes_desc:0 "To face the challenges of this changing world, we must stand united. By forging strong alliances with our neighboring tribes, we strengthen the bonds that tie us together, ensuring mutual support and a unified front against common threats. Through diplomacy and shared purpose, we build a formidable confederation."
+ tmo_union_of_tribes_desc:0 "To resist foreign encroachment, we must stand united. By forging bonds among our neighboring tribes, we build a confederation bound by kinship and purpose. Together, we are no longer scattered voices — we are a single force."
 
- tmo_strengthen_the_confederation_title:0 "Strengthen the Confederation"
- tmo_strengthen_the_confederation_desc:0 "As leaders of the Tamoio, it is our duty to solidify our confederation. By integrating more tribes under our banner and fostering a sense of shared destiny, we amplify our collective power. A stronger, more unified Tamoio Confederation will be an unstoppable force, capable of achieving great things for our people."
+ tmo_create_tamoio_nation_title:0 "The Ta'mõi Nation"
+ tmo_create_tamoio_nation_desc:0 "Our confederation is strong, our unity undeniable. Now, we must claim the lands that are rightfully ours — Rio de Janeiro, São Paulo, and Minas Gerais. With these regions under our rule, the Tamõic people shall be reborn as a sovereign nation."
 
  tmo_enemy_of_my_enemy_title:0 "The Enemy of My Enemy"
- tmo_enemy_of_my_enemy_desc:0 "The arrival of the Europeans has brought both peril and unexpected opportunities. While they are a threat, their conflicts amongst themselves can be exploited. By identifying those who oppose our primary European adversaries, we can forge strategic alliances, turning their own divisions into a shield for our people and a weapon against our common foe."
+ tmo_enemy_of_my_enemy_desc:0 "The Europeans wage war among themselves — and we can exploit their rivalries. By aligning with one faction, we gain a powerful shield against another. An alliance with the French may prove decisive in preserving our independence."
+
+ tmo_gain_knowledge_title:0 "Gain Foreign Knowledge"
+ tmo_gain_knowledge_desc:0 "Our allies from across the ocean offer us a window into their world. By studying their practices and learning from their advancements, we can refine our own society. Knowledge is power — and survival may depend on what we choose to embrace."
+
+ tmo_tamoio_confederation_title:0 "The Ta'mõi Confederation"
+ tmo_tamoio_confederation_desc:0 "The tribes now answer to a single voice — ours. As the recognized leader of the Tamõic Confederation, we command unity and strength. Our combined might will safeguard our people and strike fear into the hearts of any who seek to subjugate us."
+
+ tmo_a_new_religon_title:0 "A New Religion"
+ tmo_a_new_religon_desc:0 "Our encounters with foreign missionaries have introduced strange new beliefs to our shores. Some among us are drawn to these teachings. Adopting this new faith could open doors to powerful allies — but it may also divide our people."

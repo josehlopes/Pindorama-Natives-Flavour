@@ -7,3 +7,8 @@ tamoio_frustrated_france = {
 	opinion = -30
 	years = 10
 }
+
+tamoio_conversion_to_catholicism = {
+	opinion = 100
+	years = 50
+}

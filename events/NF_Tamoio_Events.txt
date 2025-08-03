@@ -48,3 +48,89 @@ country_event = {
 		}
 	}
 }
+
+
+country_event = {
+	id = NF_Tamoio_Events.2
+	title = NF_Tamoio_Events.2.t
+	desc = NF_Tamoio_Events.2.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NF_Tamoio_Events.2.a
+		ai_chance = { factor = 70 }
+		
+		change_religion = catholic
+		
+		add_country_modifier = {
+			name = tamoio_christian_zeal
+			duration = 3650  # 10 anos
+		}
+		every_country = {
+			limit = {
+				religion = catholic
+				has_opinion = { who = ROOT value = 50 }
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = tamoio_conversion_to_catholicism
+				years = 10
+			}
+		}
+	}
+	
+	option = {
+		name = NF_Tamoio_Events.2.b
+		ai_chance = { factor = 30 }
+		
+		add_prestige = 15
+		add_country_modifier = {
+			name = tamoio_ancestral_faith
+			duration = 7300  # 20 anos
+		}
+		add_legitimacy = 20
+	}
+}
+
+country_event = {
+	id = NF_Tamoio_Events.3
+	title = "NF_Tamoio_Events.3.t"
+	desc = "NF_Tamoio_Events.3.d"
+	picture = NATIVE_COUNCIL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "NF_Tamoio_Events.3.a"
+		change_government = theocracy
+		add_government_reform = leading_clergy_reform
+		add_country_modifier = {
+			name = "tupi_modernization"
+			duration = 9125
+		}
+		add_prestige = 20
+		define_advisor = {
+			type = theologian
+			skill = 3
+			discount = yes
+		}
+	}
+	
+	option = {
+		name = "NF_Tamoio_Events.3.b"
+		change_government = republic
+		add_government_reform = noble_elite_reform
+		add_country_modifier = {
+			name = "tupi_modernization"
+			duration = 9125
+		}
+		add_republican_tradition = 20
+		define_advisor = {
+			type = statesman
+			skill = 3
+			discount = yes
+		}
+	}
+}

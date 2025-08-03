@@ -1,33 +1,33 @@
 ﻿l_english:
 
- TMO_ideas:0 "Tamoio Ideas"
- TMO_ideas_start:0 "Tamoio Traditions"
- TMO_ideas_bonus:0 "Tamoio Ambition"
+ TMO_ideas:0 "Ta'mõi Ideas"
+ TMO_ideas_start:0 "Ta'mõi Traditions"
+ TMO_ideas_bonus:0 "Ta'mõi Ambition"
 
  tmo_trade_with_foreigners:0 "Trade with Foreigners"
- tmo_trade_with_foreigners_desc:0 "New peoples from across the sea have come to our shores. Though many bring war, others bring gifts and trade. By learning their ways and using their tools, we turn foreign contact into strength for our tribe."
+ tmo_trade_with_foreigners_desc:0 "New peoples from across the sea have reached our shores. Though many bring conquest, others bring goods and knowledge. By learning from them and using their tools, we transform foreign contact into strength for our tribe."
 
  tmo_defend_our_territory:0 "Defend Our Territory"
- tmo_defend_our_territory_desc:0 "The land is sacred, passed to us by our ancestors and protected by our spirits. We will defend every village, river, and forest path with unwavering determination against all who threaten our way of life."
+ tmo_defend_our_territory_desc:0 "This land, passed down by our ancestors and protected by sacred spirits, is not just soil—it is identity. We will defend every village, river, and forest path with unwavering determination against all who threaten our way of life."
 
  tmo_confederate_strength:0 "Confederate Strength"
- tmo_confederate_strength_desc:0 "Long divided by clan and custom, our people now rise united. As threats from across the ocean grow, so does our resolve. United under the banner of the Tamoio Confederation, we stand stronger than ever before."
+ tmo_confederate_strength_desc:0 "Once divided by clan and custom, we now rise united. As threats from beyond the sea grow, so does our resolve. Bound together under the banner of the Tamõic Confederation, we are stronger than ever before."
 
  tmo_yam_cultivation:0 "Yam Cultivation"
- tmo_yam_cultivation_desc:0 "Though hunters and gatherers by tradition, we have long relied on the cultivation of yam and manioc to support our people. This steady food supply allows our communities to thrive even in times of scarcity."
+ tmo_yam_cultivation_desc:0 "While rooted in hunting and gathering, our people have long cultivated yam and manioc. These crops provide a steady food source, allowing our villages to endure droughts, raids, and war with resilience."
 
  tmo_the_grandparents:0 "The Grandparents"
- tmo_the_grandparents_desc:0 "‘Tamoio’ means 'grandfather' in the tongue of our people. It is not just a name, but a declaration: we are the inheritors of ancient wisdom. Guided by the elders and their stories, our tribe remembers, resists, and endures."
+ tmo_the_grandparents_desc:0 "'Ta'mõi' means 'grandfather' in our ancestral tongue. It is more than a name—it is a legacy. Guided by the wisdom of our elders and the stories of our ancestors, we endure, we remember, and we resist."
 
  tmo_metal_tools:0 "Metal Tools"
- tmo_metal_tools_desc:0 "We have learned to work with iron and copper from those who crossed the sea. Metal blades and tools give us an edge in hunting, farming, and war—changing the balance of power in our favor."
+ tmo_metal_tools_desc:0 "From those who crossed the sea, we have learned to forge iron and copper. With metal blades and farming tools, we reshape the land and shift the balance of power. These gifts of war and work now serve our people."
 
  tmo_modernize_the_tribe:0 "Modernize the Tribe"
- tmo_modernize_the_tribe_desc:0 "To preserve our people, we must understand the new world forming around us. By adapting foreign knowledge to our own needs, we ensure the Tamoio not only survive—but thrive—in an age of change."
+ tmo_modernize_the_tribe_desc:0 "To preserve our people, we must understand the world that is changing around us. By adapting foreign knowledge to our own traditions, we ensure that the Tamõic people not only survive—but thrive—in this new age."
 
 
 
-  GTC_ideas:0 "Goitacaz Ideas"
+ GTC_ideas:0 "Goitacaz Ideas"
   GTC_ideas_start:0 "Goitacaz Traditions"
   GTC_ideas_bonus:0 "Goitacaz Ambition"
 

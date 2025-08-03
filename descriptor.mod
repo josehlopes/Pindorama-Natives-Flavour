@@ -1,7 +1,10 @@
+name="Pindorama - Natives Flavour"
 version="0.1"
 tags={
+	"Historical"
+	"Missions And Decisions"
+	"Events"
+	"Gameplay"
 	"New Nations"
-	"Expansion"
 }
-name="Pindorama - Natives Flavour"
-supported_version="v1.37.5.0"
+supported_version="v1.37.*"

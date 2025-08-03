@@ -10,7 +10,7 @@ GTC_ideas = {
 	}
 	
 	trigger = {
-		tag = GTC
+		tag = TUA
 	}
 	
 	free = yes

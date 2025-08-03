@@ -15,14 +15,12 @@ country_decisions = {
 				ai = no
 			}
 			NOT = { exists = TMC }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
 			primary_culture = tupinamba
 			OR = {
 				ai = no
 				AND = {
 					ai = no
-					num_of_cities = 3
+					num_of_cities = 5
 				}
 			}
 			is_colonial_nation = no
@@ -37,6 +35,8 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				area = rio_de_janeiro_area
+				area = sao_paolo_area
+				area = minas_gerais_area
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -52,13 +52,10 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = TMC
-			change_government = republic
-			add_government_reform = noble_elite_reform
 			add_prestige = 50
 			swap_non_generic_missions = yes
 			on_change_tag_effect = yes
-
-
+			
 			if = {
 				limit = {
 					NOT = {
@@ -66,21 +63,21 @@ country_decisions = {
 					}
 					is_part_of_hre = no
 				}
+				
 				TMC = { 
 					set_government_rank = 2
-					
-					every_owned_province = {
-						add_institution_embracement = {
-							which = feudalism
-							value = 100
-						}
-					} 
-					random_owned_province = {
-						add_institution_embracement = {
-							which = renaissance
-							value = 100
-						} 
-					}
+					# every_owned_province = {
+					# 	add_institution_embracement = {
+					# 		which = feudalism
+					# 		value = 100
+					# 	}
+					# }
+					# random_owned_province = {
+					# 	add_institution_embracement = {
+					# 		which = renaissance
+					# 		value = 100
+					# 	}
+					# }
 				}
 			}
 
@@ -98,6 +95,13 @@ country_decisions = {
 				}
 				add_permanent_claim = TMC
 			}
+			rio_de_janeiro_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = TMC
+			}
 			
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -107,7 +111,7 @@ country_decisions = {
 				name = "army_reform"
 				duration = 7300
 			}
-
+			
 			set_country_flag = formed_tamoio_flag
 
 			if = {
