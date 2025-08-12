@@ -1,0 +1,16 @@
+is_a_coastal_ge_tribe = {
+    OR = {
+        primary_culture = ge
+        capital_scope = {
+            OR = {
+                has_port = yes
+            }
+        }
+    }
+}
+
+ own_all_ge_culture_provinces = {
+     province_group = {
+        name = ge_culture_area 
+     }
+ }

@@ -21,14 +21,9 @@ TMO_missions_1 = {
 		effect = {
 			add_government_reform = native_settle_down_reform
 			add_country_modifier = {
-				name = "colonize_the_continent"
+				name = "tamoio_new_lands"
 				duration = -1
 			}
-			add_country_modifier = {
-				name = "colony_cost_modifier"
-				duration = 9125 #25 years
-			}
-			can_colonize = yes
 		}
 	}
 	
@@ -230,7 +225,7 @@ TMO_missions_4 = {
 				}
 			}
 			add_country_modifier = {
-				name = "embracement_cost"
+				name = "tupi_modernization"
 				duration = 1825 #5 Years
 			}
 		}

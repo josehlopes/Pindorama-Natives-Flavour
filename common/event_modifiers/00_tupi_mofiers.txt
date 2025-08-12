@@ -2,6 +2,13 @@ tupi_modernization = {
     reform_progress_growth = 0.25
     global_institution_spread = 0.33
     stability_cost_modifier = -0.15
+    embracement_cost = -0.5
+}
+
+tamoio_new_lands = {
+	colonists = 1 
+	colony_cost_modifier = -0.1
+	may_explore = yes 
 }
 
 tupi_coastal_power = {
@@ -15,7 +22,7 @@ tupi_military_morale_of_the_confederation = {
 }
 
 tamoio_christian_zeal = {
-    missionary_strength = 0.02
+    global_missionary_strength = 0.02
     tolerance_own = 1
 }
 
@@ -24,7 +31,3 @@ tamoio_ancestral_faith = {
     war_exhaustion = -0.02
 }
 
-tamoio_conversion_to_catholicism = {
-    opinion = 30
-    months = 120
-}

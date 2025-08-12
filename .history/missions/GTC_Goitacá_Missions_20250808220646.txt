@@ -1,0 +1,320 @@
+ GTC_slot_1 = { 
+     slot = 1
+     generic = no
+     ai = yes
+     has_country_shield = yes
+
+     potential = {
+         tag = GTC
+         NOT = { map_setup = map_setup_random }
+     }
+
+     gtc_triumph_goitaca = {
+         icon = mission_che_the_cave_country
+         required_missions = { gtc_drive_out_europeans gtc_unite_the_tribes }
+         position = 5
+
+         provinces_to_highlight = {
+            [ge_culture_provinces]
+         }
+
+         trigger = { #TODO:RANDOM TRIGGER APENAS PARA TESTE
+            ROOT = {
+                owns = [ge_culture_provinces]
+            }
+         }
+         effect = { #TODO: CRIAR EVENTO QUE MUDE O RANK DE GOVERNO PARA IMPÉRIO E DÊ 100 DE PRESTIGIO E DE POWER PROJECTION
+             add_stability = 3
+             add_mil_power = 75
+             add_dip_power = 75
+             add_adm_power = 75
+         }
+     }
+}
+
+ GTC_slot_2 = {
+     slot = 2
+     generic = no
+     ai = yes
+     has_country_shield = yes
+
+     potential = {
+         tag = GTC
+         NOT = { map_setup = map_setup_random }
+     }
+
+    gtc_guerrilla_tatics = {
+        icon = mission_oceania_assemble_an_army
+        position = 1
+        required_missions = { }
+
+        trigger = {
+            has_mil_advisor = yes
+            capital_scope = {
+                has_terrain = jungle
+            }
+        }
+        
+        effect = {
+            add_country_modifier = {
+                name = "goitaca_guerrilla_warfare"
+                duration = 9125 #25 years
+            }
+        }
+    }
+
+    gtc_found_an_army = {
+        icon = mission_native_build_army_mission
+        position = 2
+        required_missions = { gtc_guerrilla_tatics }
+
+        trigger = {
+            has_mil_advisor_2 = yes
+            army_tradition = 20
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "goitaca_standing_army"
+                duration = 27375 #75 years
+            }
+            hidden_effect = {
+                every_owned_province = {
+                    every_neighbor_province = {
+                        limit = {
+                            NOT = { owned_by = ROOT }
+                            NOT = { is_permanent_claim = ROOT }
+                            NOT = { is_core = ROOT }
+                        }
+                        add_claim = ROOT
+                    }
+                }
+            }
+        }
+    }
+
+    gtc_drive_out_europeans = {
+    icon = mission_nah_the_enemy_way
+        position = 3
+        required_missions = { gtc_found_an_army }
+        trigger = {
+            OR = {
+                is_tribal = no
+                has_reform = steppe_horde
+            }
+            NOT = {
+                government = native
+            }
+            has_institution = feudalism
+            custom_trigger_tooltip = {
+                tooltip = new_world_remove_euro_toolip
+                capital_scope = {
+                    region_for_scope_province = {
+                        type = all
+                        NOT = {
+                            owner = {
+                                technology_group = western
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        effect = {
+            add_mil_power = 200
+            add_country_modifier = {
+                name = "military_victory"
+                duration = 7300
+            }
+            custom_tooltip = perma_claim_neighbor_area
+            hidden_effect = {
+                every_owned_province = {
+                    every_neighbor_province = {
+                        area = {
+                            limit = {
+                                NOT = { owned_by = ROOT }
+                                NOT = { is_permanent_claim = ROOT    }
+                                NOT = { is_core = ROOT    }
+                            }
+                            add_permanent_claim = ROOT
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+GTC_slot_3 = { #Tronco da Árvore
+    slot = 3
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GTC
+        NOT = { map_setup = map_setup_random }
+    }
+
+    gtc_sons_of_earth = {
+        icon = mission_nah_holy_people
+        position = 1
+        required_missions = { }
+
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 2
+                culture = ge
+                religion = animism
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "goitaca_sons_of_earth"
+                duration = 9125
+            }
+        }
+    }
+
+    gtc_avoid_foreigners = {
+        icon = mission_pow_powhatan_fleet
+        position = 2
+        required_missions = { gtc_sons_of_earth }
+
+        trigger = {
+            europe = { has_discovered = ROOT }
+            NOT = {
+                any_country = {
+                    capital_scope = {
+                        continent = europe
+                    }
+                    alliance_with = ROOT
+                }
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "goitaca_hostile_fame"
+                duration = -1
+            }
+        }
+    }
+
+    gtc_self_preservation = {
+        icon = mission_ne_palisades
+        position = 3
+        required_missions = { gtc_avoid_foreigners }
+
+        trigger = {
+            ROOT = {
+                capital_scope = {
+                    has_building = native_palisade
+                }
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "goitaca_self_preservation"
+                duration = -1
+            }
+        }
+    }
+    
+    gtc_unite_the_tribes = {
+        icon = mission_unite_home_region
+        required_missions = { gtc_self_preservation }
+        position = 4
+
+        provinces_to_highlight = {
+            all_province = {
+                province_group = ge_culture_provinces
+
+            } 
+        }
+
+        trigger = {
+            num_of_owned_provinces_with = {
+                province_group = ge_culture_provinces
+                value = 10
+            }
+        }
+
+        effect = {
+            ge_culture_provinces = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+            }
+            add_government_reform = tribal_federation
+        }   
+    
+    }
+}
+
+
+
+
+# GTC_slot_4 = {
+#     slot = 4
+#     generic = no
+#     ai = yes
+#     has_country_shield = yes
+#
+#     potential = {
+#         tag = GTC
+#         NOT = { map_setup = map_setup_random }
+#     }
+#
+#     gtc_claim_pindorama = {
+#         icon = mission_unite_home_region
+#         required_missions = { gtc_triumph_goitaca gtc_stabilish_a_kingdom }
+#         position = 4
+#
+#         trigger = {
+#             aways = yes
+#         }
+#
+#         effect = {
+#             brazil_region = {
+#                 add_permanent_claim = ROOT
+#             }
+#         }
+#     }
+# }
+
+# GTC_slot_5 = { #Arvore Militar
+#     slot = 5
+#     generic = no
+#     ai = yes
+#     has_country_shield = yes
+#
+#     potential = {
+#         tag = GTC
+#         NOT = { map_setup = map_setup_random }
+#     }
+#
+#     gtc_stabilish_a_kingdom = {
+#         icon = mission_mnd_khm_restored_empire
+#         required_missions = { gtc_retake_tupi_lands }
+#         position = 3
+#
+#         trigger = {
+#             num_of_areas_owned_in_region = {
+#                 region = brazil_region
+#                 value >= 2
+#             }
+#         }
+#
+#         effect = {
+#             set_government_rank = 3
+#             change_government = tribe
+#             add_government_reform = tribal_depotism
+#         }
+#     }
+#
+# }

@@ -1,0 +1,10 @@
+is_a_coastal_ge_tribe = {
+    OR = {
+        primary_culture = ge
+        capital_scope = {
+            OR = {
+                has_port = yes
+            }
+        }
+    }
+}

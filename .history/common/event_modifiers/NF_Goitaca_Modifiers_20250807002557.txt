@@ -1,0 +1,25 @@
+goitaca_hostile_fame = {
+    diplomatic_reputation = -3
+    infantry_cost = -0.20
+    infantry_power = 0.15
+    land_morale = 0.10
+    local_spy_defence = 0.20
+    tolerance_heretic = -0.5
+}
+
+goitaca_early_development = {
+    production_efficiency = 0.15
+    global_tax_modifier = 0.15
+    add_tribal_land_cost = -0.5
+    settle_cost = -0.10
+}
+
+goitaca_self_preservation = {
+    garrison_size = 0.30
+}
+
+goitaca_sons_of_earth = {
+    religious_unity = 0.25
+    tolerance_own = 1
+}
+

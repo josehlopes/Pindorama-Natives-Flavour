@@ -1,0 +1,291 @@
+# GTC_slot_1 = { #Arvore de desenvolvimento
+#     slot = 1
+#     generic = no
+#     ai = yes
+#     has_country_shield = yes
+#
+#     potential = {
+#         tag = GTC
+#         NOT = { map_setup = map_setup_random }
+#     }
+#
+#     gtc_found_an_army = {
+#         icon = native_build_army_mission
+#         required_missions = { }
+#         position = 1
+#         trigger = {
+#             army_size_percentage = 1
+#         }
+#         effect = {
+#             add_country_modifier = {
+#                 name = "thriving_arms_industry"
+#                 duration = 9125 #25 years
+#             }
+#             hidden_effect = {
+#                 every_owned_province = {
+#                     every_neighbor_province = {
+#                         limit = {
+#                             NOT = { owned_by = ROOT }
+#                             NOT = { is_permanent_claim = ROOT }
+#                             NOT = { is_core = ROOT }
+#                         }
+#                         add_claim = ROOT
+#                     }
+#                 }
+#             }
+#         }
+#     }
+#
+#     gtc_prepare_for_unification = {
+#         icon = native_build_army_mission
+#         required_missions = { gtc_found_an_army }
+#         position = 2
+#         trigger = {
+#             capital_scrope = {
+#                 base_manpower = 5
+#             }
+#         }
+#         effect = {
+#             add_army_tradition = 20
+#             add_army_professionalism = 0.02
+#             any_province = {
+#                 limit = {
+#                     culture = ge
+#                 }
+#                 add_permanent_claim = ROOT
+#             }
+#         }
+#     }
+#
+#     gtc_triumph_goitaca = {
+#         icon = mission_che_the_cave_country.
+#         required_missions = { gtc_prepare_for_unification }
+#         position = 3
+#
+#         trigger = { #TODO:RANDOM TRIGGER APENAS PARA TESTE
+#             every_province = {
+#                 culture = ge
+#                 owned_by = GTC
+#             }
+#         }
+#         effect = {
+#             prestige = 100
+#             power_projection = 100
+#         }
+#     }
+
+    # gtc_retake_tupi_lands = {
+    #     icon = mission_mnd_maj_subjugate_makassar
+    #     required_missions = { gtc_prepare_for_unification }
+    #     position = 2
+    #
+    #     trigger = {
+    #         war_with = {
+    #             any_country = {
+    #                 limit = { primary_culture = tupinamba }
+    #             }
+    #         }
+    #     }
+    #
+    #     effect = {
+    #         any_country = {
+    #             limit = { primary_culture = tupinamba }
+    #             every_owned_province = {
+    #                 add_permanent_claim = GTC
+    #             }
+    #         }
+    #     }
+    # }
+
+# }
+
+# GTC_slot_2 = {
+#     slot = 2
+#     generic = no
+#     ai = yes
+#     has_country_shield = yes
+#
+#     potential = {
+#         tag = GTC
+#         NOT = { map_setup = map_setup_random }
+#     }
+#
+#     gtc_develop_the_agriculture = {
+#         icon = iroquois_food_surplus
+#         required_missions = { gtc_self_preservation }
+#         position = 3
+#
+#         trigger = {
+#             grown_by_development = 10
+#         }
+#
+#         effects = {
+#             add_country_modifier = {
+#                 name = "goitaca_early_development"
+#                 duration = 9125 #25 Yearts
+#             }
+#         }
+#     }
+# }
+
+GTC_slot_3 = { #Tronco da Árvore
+    slot = 3
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GTC
+        NOT = { map_setup = map_setup_random }
+    }
+
+    gtc_sons_of_earth = {
+        icon = mission_nah_holy_people
+        position = 1
+        required_missions = { }
+
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 2
+                culture = ge
+                religion = animism
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "goitaca_sons_of_earth"
+                duration = 9125
+            }
+        }
+    }
+
+    gtc_avoid_foreigners = {
+        icon = mission_pow_powhatan_fleet
+        position = 2
+        required_missions = { gtc_sons_of_earth }
+
+        trigger = {
+            europe = { has_discovered = ROOT }
+            NOT = {
+                any_country = {
+                    capital_scope = {
+                        continent = europe
+                    }
+                    alliance_with = ROOT
+                }
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "goitaca_hostile_fame"
+                duration = -1
+            }
+        }
+    }
+
+    gtc_self_preservation = {
+        icon = mission_ne_palisades
+        position = 3
+        required_missions = { gtc_avoid_foreigners }
+
+        trigger = {
+            ROOT = {
+                capital_scope = {
+                    has_building = native_palisade
+                }
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "goitaca_self_preservation"
+                duration = -1
+            }
+        }
+    }
+}
+
+    # gtc_unite_the_tribes = {
+    #     icon = mission_unite_home_region
+    #     required_missions = { gtc_self_preservation }
+    #     position = 4
+    #
+    #     trigger = {
+    #         num_of_owned_provinces_with = {
+    #             value = 10
+    #             culture = ge
+    #             religion = animism
+    #         }
+    #     }
+    #
+    #     effect = {
+    #         all_provinces = {
+    #             culture = ge
+    #             add_permanent_claim = ROOT
+    #         }
+    #         add_government_reform = tribal_federation_government
+    #     }
+    # }
+
+
+# GTC_slot_4 = {
+#     slot = 4
+#     generic = no
+#     ai = yes
+#     has_country_shield = yes
+#
+#     potential = {
+#         tag = GTC
+#         NOT = { map_setup = map_setup_random }
+#     }
+#
+#     gtc_claim_pindorama = {
+#         icon = mission_unite_home_region
+#         required_missions = { gtc_triumph_goitaca gtc_stabilish_a_kingdom }
+#         position = 4
+#
+#         trigger = {
+#             aways = yes
+#         }
+#
+#         effect = {
+#             brazil_region = {
+#                 add_permanent_claim = ROOT
+#             }
+#         }
+#     }
+# }
+
+# GTC_slot_5 = { #Arvore Militar
+#     slot = 5
+#     generic = no
+#     ai = yes
+#     has_country_shield = yes
+#
+#     potential = {
+#         tag = GTC
+#         NOT = { map_setup = map_setup_random }
+#     }
+#
+#     gtc_stabilish_a_kingdom = {
+#         icon = mission_mnd_khm_restored_empire
+#         required_missions = { gtc_retake_tupi_lands }
+#         position = 3
+#
+#         trigger = {
+#             num_of_areas_owned_in_region = {
+#                 region = brazil_region
+#                 value >= 2
+#             }
+#         }
+#
+#         effect = {
+#             set_government_rank = 3
+#             change_government = tribe
+#             add_government_reform = tribal_depotism
+#         }
+#     }
+#
+# }

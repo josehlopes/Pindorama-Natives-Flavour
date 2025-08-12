@@ -37,6 +37,7 @@ country_decisions = {
 				area = rio_de_janeiro_area
 				area = sao_paolo_area
 				area = minas_gerais_area
+
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -56,31 +57,6 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			on_change_tag_effect = yes
 			
-			if = {
-				limit = {
-					NOT = {
-						government_rank = 2
-					}
-					is_part_of_hre = no
-				}
-				
-				TMC = { 
-					set_government_rank = 2
-					# every_owned_province = {
-					# 	add_institution_embracement = {
-					# 		which = feudalism
-					# 		value = 100
-					# 	}
-					# }
-					# random_owned_province = {
-					# 	add_institution_embracement = {
-					# 		which = renaissance
-					# 		value = 100
-					# 	}
-					# }
-				}
-			}
-
 			sao_paolo_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
